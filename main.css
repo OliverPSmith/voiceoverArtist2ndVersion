@@ -440,6 +440,11 @@ audio::-webkit-media-controls-panel {
         width: 275px;
     }
 }   
+@media only screen and (max-width: 550px) {
+    .landing-note {
+        width: 280px;
+    }
+}
 
 
 /********************************** Bottom Services & Youtube */
@@ -578,10 +583,6 @@ audio::-webkit-media-controls-panel {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-    }
-    .youtube-video {
-        margin-bottom: 1.5rem;
-        margin-left: 0;
     }
     .youtube-video iframe {
         width: 280px;
@@ -926,6 +927,12 @@ audio::-webkit-media-controls-panel {
     .logos-block {
         width: 100%;
         padding-right: 2rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .logo {
+        height: 100px;
+        width: 100px;
     }
 }
 
