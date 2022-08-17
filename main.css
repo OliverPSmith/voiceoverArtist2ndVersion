@@ -202,7 +202,7 @@ section {
     align-items: center;
     width: 100%;
    /* height: 18rem;    */
-    height: 12rem;
+    height: 18rem;
     box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.1);
 }
 
@@ -233,8 +233,8 @@ section {
 }
 
 .avatar {
-    height: 6rem;
-    width: 6rem;
+    height: 9rem;
+    width: 9rem;
     margin: 1rem;
 }
 
@@ -257,6 +257,12 @@ section {
     font-family: var(--font-main);
 }
 
+@media only screen and (max-width: 999px) {
+    .avatar-container a {
+        margin-left: 1rem;
+    }
+} 
+
 @media only screen and (max-width: 700px) {
     .landing-top {
         flex-direction: column;
@@ -270,6 +276,9 @@ section {
     }
     .avatar {
         display: none;
+    }
+    .avatar-container a {
+        margin-left: 0rem;
     }
 }
 
@@ -385,10 +394,6 @@ audio::-webkit-media-controls-panel {
         width: 380px;
         margin: 5px 5px 0;
         border-radius: 0px;
-}
-
-    .services-container {
-        width: 80%;
     }
 }
 
@@ -416,14 +421,6 @@ audio::-webkit-media-controls-panel {
     .audio-item {
         width: 40%;
     }
-
-    .bottom-services {
-        width: 90%;
-        margin-top: 2rem;
-    }
-    .services-container {
-        width: 100%;
-    }   
 }
 
 @media only screen and (max-width: 550px) {
@@ -554,14 +551,21 @@ audio::-webkit-media-controls-panel {
     margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 999px) {
+    .services-container {
+        width: 80%;
+    }
+}
 
 @media only screen and (max-width: 850px) {
     .bottom-services {
         flex-direction: column-reverse;
+        width: 90%;
+        margin-top: 2rem;
     }
     .services-container {
-        width: 80%;
-    }
+        width: 100%;
+    } 
     .youtube-container {
         width: 100%;
         flex-direction: row;
